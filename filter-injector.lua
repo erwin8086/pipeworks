@@ -451,6 +451,7 @@ for _, data in ipairs({
 
 
 	minetest.register_node("pipeworks:"..data.name, node)
+	spoil.register_inv("pipeworks:"..data.name, {"main"})
 end
 
 minetest.register_craft( {

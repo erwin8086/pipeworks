@@ -276,6 +276,7 @@ local function register_wielder(data)
 				return count
 			end
 		})
+		spoil.register_inv(data.name_base.."_"..state, {data.wield_inv_name, data.ghost_inv_name, "main"})
 	end
 end
 

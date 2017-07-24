@@ -403,6 +403,9 @@ minetest.register_node("pipeworks:autocrafter", {
 	},
 })
 
+-- Spoil items in autocrafter
+spoil.register_inv("pipeworks:autocrafter", {"src", "dst", "output"})
+
 minetest.register_craft( {
 	output = "pipeworks:autocrafter 2",
 	recipe = {
